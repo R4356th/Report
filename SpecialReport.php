@@ -118,7 +118,8 @@ class SpecialReport extends SpecialPage {
 			], __METHOD__ );
 			$dbw->endAtomic(__METHOD__);
 			$out->addWikiMsg( 'report-success' );
-			$out->addWikiMsg( 'returnto', '[[' . Revision::newFromId( (int)$par )->getTitle()->getPrefixedText() . ']]' );
+			// Use MediaWiki's builtin function for adding a "Return to <page-name>." message to the output.
+			$out->addReturnTo(Title::newFromId( (int)$par )->getPrefixedText());
 			return;
 		}
 	}
