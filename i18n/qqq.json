@@ -24,7 +24,6 @@
 	"report-handling-view-report": "Link text to view the report",
 	"report-handling": "Fieldset legend for handling a report",
 	"report-handling-mark-handled": "Button text to mark a report as handled",
-	"report-handling-nothandled": "Text for report being not handled",
 	"report-handling-handledq": "Table header for whether the report is handled",
 	"report-handling-handled-by": "Table header for username of handler",
 	"report-handling-view-handled": "Link text to view handled reports",
